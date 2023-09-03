@@ -3,11 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <title>The Basic Language of the Web: HTML</title>
+
+    <!-- EXTERNAL CSS -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- INTERNAL CSS -->
+    <!-- <style>
+      h1 {
+        color: red;
+      }
+    </style> -->
   </head>
 
   <body>
-    <header>
+    <header class="main-header">
       <h1>📘The Code Magazine</h1>
+
+      <!-- <p>Test paragraph</p> -->
+
+      <!--  INLINE CSS  -->
+      <!-- <h1 style="color: green">📘The Code Magazine</h1> -->
 
       <nav>
         <a href="blog.html">Blog</a>
@@ -28,7 +43,10 @@
           height="50"
         />
 
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <!-- id is used for selectors, are unique -->
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
 
         <img
           src="img/post-img.jpg"
@@ -67,7 +85,7 @@
       <p>In HTML, each element is made up of 3 parts:</p>
 
       <ol>
-        <li>The opening tag</li>
+        <li class="first-li">The opening tag</li>
         <li>The closing tag</li>
         <li>The actual element</li>
       </ol>
@@ -89,7 +107,9 @@
       </p>
 
       <ul>
-        <li>To be able to use the fundamental web dev language</li>
+        <li class="first-li">
+          To be able to use the fundamental web dev language
+        </li>
         <li>
           To hand-craft beautiful websites instead of relying on tools like
           Worpress or Wix
@@ -103,9 +123,10 @@
     </article>
 
     <aside>
-      <h3>Related posts</h3>
+      <h4>Related posts</h4>
 
-      <ul>
+      <!-- class can be reused -->
+      <ul class="related">
         <li>
           <img
             src="img/related-1.jpg"
@@ -116,7 +137,7 @@
           <a href="#">How to Learn Web Devlopment</a>
         </li>
 
-        <p>By Samrjeet Singh Kheda</p>
+        <p class="related-author">By Samarjeet Singh</p>
 
         <li>
           <img
@@ -130,7 +151,7 @@
           >
         </li>
 
-        <p>By Jonas Nobody</p>
+        <p class="related-author">By Jonas Nobody</p>
 
         <li>
           <img
@@ -142,10 +163,11 @@
           <a href="#" target="_blank">Why JavaScript is Awesome</a>
         </li>
 
-        <p>By John Wick</p>
+        <p class="related-author">By John Wick</p>
       </ul>
     </aside>
-
-    <footer>Copyright &copy; 2027 by Code Magzine</footer>
+    <footer>
+      <p id="Copyright">Copyright &copy; 2027 by Code Magzine</p>
+    </footer>
   </body>
 </html>

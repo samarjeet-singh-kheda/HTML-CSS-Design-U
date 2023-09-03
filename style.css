@@ -1,0 +1,131 @@
+/* EXTERNAL CSS */
+
+/* all the selectors here are list selectors */
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444; /*only for text, not background*/
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  /* h1 need not be biggest, it's just for semantics */
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  /* 'p' is selected once, but it will affect everywhere */
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  /* we selected 'li' instead of 'ol' & 'ul' */
+  font-size: 20px;
+}
+
+/* descendance selector */
+
+/* footer p {
+  font-size: 16px;
+}
+
+article header p {
+  font-style: italic;
+} */
+
+/* for selectors/id */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#Copyright {
+  font-size: 16px;
+}
+
+/* for class */
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+body {
+  /* background-color: aquamarine; */
+  /* Will fill the entire background, unless specified */
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(odd) {
+  /* color: chartreuse; */
+}
+
+li:nth-child(3) {
+  /* color: brown; */
+}
+
+/* Minsconception, this won't work! */
+article p:first-child {
+  color: red;
+}
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: #777; */
+  color: #1098ad;
+}
+
