@@ -1,16 +1,19 @@
 /* EXTERNAL CSS */
 
-/* all the selectors here are list selectors */
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
-  color: #444; /*only for text, not background*/
+* {
+  /* inheritance isn't involved, it simply applies to every element (different mechanism)*/
+  /* border-top: 10px solid yellowgreen; */
+  /* can be used for properties, that aren't */
 }
 
+body {
+  color: #444; /*only for text, not background*/
+  font-family: sans-serif;
+  /* this property doesn't get inherited */
+  border-top: 10px solid #1098ad;
+}
+
+/* all the selectors here are list selectors */
 h1,
 h2,
 h3 {
@@ -98,6 +101,7 @@ body {
   font-weight: bold;
 } */
 
+/* pseudo class */
 li:first-child {
   font-weight: bold;
 }
@@ -119,13 +123,53 @@ article p:first-child {
   color: red;
 }
 
+/* styling links */
 a:link {
   color: #1098ad;
   text-decoration: none;
 }
 
 a:visited {
-  /* color: #777; */
+  /* color: #777;   */
   color: #1098ad;
 }
 
+a:hover {
+  color: rgb(49, 0, 128);
+  font-weight: bold;
+  text-decoration: underline solid orangered;
+}
+
+a:active {
+  background-color: blanchedalmond;
+  font-style: italic;
+}
+
+/* resolving conflicts */
+.Copyright {
+  color: pink;
+}
+
+#Copyright {
+  color: red;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: purple !important;
+}
+
+/* for challenge */
+/* button {
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+} */
