@@ -173,6 +173,7 @@ article p:first-child {
 }
 
 /* styling links */
+/* LVHA */
 a:link {
   color: #1098ad;
   text-decoration: none;
@@ -193,7 +194,6 @@ a:active {
   background-color: blanchedalmond;
   font-style: italic;
 }
-/* LVHA */
 
 .post-img {
   width: 100%;
@@ -223,6 +223,7 @@ button {
   bottom: 50px;
 }
 
+/* pseudo elements */
 h1::first-letter {
   font-style: normal;
   margin-right: 5px;
